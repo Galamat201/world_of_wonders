@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Words</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="app">
+
+  <div class="top">
+    <div class="level">Level <span id="lvl">1</span></div>
+    <select onchange="setLang(this.value)">
+      <option value="kz">ҚАЗ</option>
+      <option value="ru">РУС</option>
+      <option value="en">ENG</option>
+    </select>
+  </div>
+
+  <div class="slots" id="slots"></div>
+  <div class="letters" id="letters"></div>
+
+  <div class="controls">
+    <button onclick="clearInput()">Очистить</button>
+    <button onclick="hint()">Hint</button>
+  </div>
+
+  <div class="msg" id="msg"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
