@@ -1,14 +1,12 @@
 const words={
-  kz:["АЛМА","ҚАЛА","КІТАП","МЕКТЕП","ТАБИҒАТ","ДОСТЫҚ","БАЛАЛАР"],
-  ru:["ДОМ","КНИГА","ГОРОД","ДРУЖБА","МАГАЗИН","КОМПЬЮТЕР"],
   en:["BOOK","CITY","APPLE","FRIEND","SCHOOL","NATURE","COMPUTER"]
 };
 
-let lang="kz",
+let lang="en",
     level=1,
     word="",
     input="",
-    used={kz:[],ru:[],en:[]};
+    used={en:[]};
 
 const slots=document.getElementById("slots");
 const letters=document.getElementById("letters");
@@ -37,7 +35,7 @@ function load(){
 
   word=pickWord();
   if(!word){
-    msg.textContent="🎉 Барлық сөз аяқталды";
+    msg.textContent="🎉 all words are finishedы";
     return;
   }
 
